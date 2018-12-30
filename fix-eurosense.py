@@ -371,8 +371,8 @@ def drop_unanchorable(inf: IO, outf: IO):
                     break
             if not found:
                 dropped += 1
-                logger.info(f"Anchor not found: {anchor_text}")
-                logger.info(sent_elem.attrib["id"])
+                logger.debug(f"Anchor not found: {anchor_text}")
+                logger.debug(sent_elem.attrib["id"])
                 annotation.getparent().remove(annotation)
 
     try:
