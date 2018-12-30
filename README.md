@@ -15,8 +15,8 @@ https://archive.org/details/eurosense-hp.fixed.xml
 
 You can run the fixing script on the original:
 
-   $ pipenv install
-   $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision.xml
+    $ pipenv install
+    $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision.xml
 
 ## Motivation
 
