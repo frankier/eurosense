@@ -15,8 +15,8 @@ TODO
 
 You can run the fixing script on the original:
 
- $ pipenv install
- $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision.xml
+   $ pipenv install
+   $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision.xml
 
 ## Motivation
 
@@ -41,12 +41,12 @@ annotation is (almost?) always duplicated. Finally, there are sometimes empty
 
 ## Summary of changes
 
-Dropped unanchorable annotations: 257
-Reorderings: 3350417
-Problem sentences: 134674
-Total problems: 8247578
-Unfixable problems: 3738
-Removed empty sentences: 32191
+    Dropped unanchorable annotations: 257
+    Reorderings: 3350417
+    Problem sentences: 134674
+    Total problems: 8247578
+    Unfixable problems: 3738
+    Removed empty sentences: 32191
 
 ## Caveats
 
