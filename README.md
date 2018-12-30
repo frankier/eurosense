@@ -9,7 +9,7 @@ than fixing the underlying problem, please use at your own risk.
 
 You can download the processed corpus here:
 
-TODO
+https://archive.org/details/eurosense-hp.fixed.xml
 
 **--OR--**
 
