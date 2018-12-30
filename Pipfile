@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+stiff = {editable = true, ref = "24e81c233f4d9289443e82557207ddc4aa1113cd", git = "https://github.com/frankier/STIFF.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
