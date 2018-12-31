@@ -7,7 +7,7 @@ than fixing the underlying problem, please use at your own risk.
 
 ## Obtaining
 
-You can download the processed corpus here:
+You can download the processed corpus (both high precision and high coverage) here:
 
 https://archive.org/details/eurosense-hp.fixed.xml
 
@@ -16,7 +16,7 @@ https://archive.org/details/eurosense-hp.fixed.xml
 You can run the fixing script on the original:
 
     $ pipenv install
-    $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision.xml
+    $ pipenv run fix-eurosense.py pipeline path/to/eurosense.v1.0.high-precision-or-high-coverage.xml
 
 ## Motivation
 
@@ -41,11 +41,22 @@ annotation is (almost?) always duplicated. Finally, there are sometimes empty
 
 ## Summary of changes
 
+High precision:
+
     Dropped unanchorable annotations: 257
     Reorderings: 3350417
     Problem sentences: 134674
     Total problems: 8247578
     Unfixable problems: 3738
+    Removed empty sentences: 32191
+
+High coverage:
+
+    Dropped unanchorable annotations: 426
+    Reorderings: 5643646
+    Problem sentences: 204699
+    Total problems: 30203097
+    Unfixable problems: 6374
     Removed empty sentences: 32191
 
 ## Caveats
