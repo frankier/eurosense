@@ -393,8 +393,9 @@ def pipeline(inf, outf):
         | python[fix_eurosense_py, "retag-languages", "-", "-"]
         | python[fix_eurosense_py, "rm-empty-texts", "-", outf]
     )
-    print(cmds)
-    cmds(retcode=[-13, 0], stderr=sys.stderr)
+    if os.environ.get("TRACE_PIPELINE"):
+        print(cmds)
+    cmds(retcode=[-13, 0], stderr=sys.stderr, stdout=sys.stdout)
 
 
 if __name__ == "__main__":
